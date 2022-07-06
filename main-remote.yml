@@ -1,0 +1,9 @@
+---
+- name: setting up Webserver in EC2
+  hosts: 44.204.47.76
+  user: ec2-user
+  become: true
+  become_method: sudo
+  become_user: root
+  roles:
+   - setup
